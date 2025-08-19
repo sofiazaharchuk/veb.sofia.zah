@@ -5,7 +5,8 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    text-align: center; 
+    /* Вирівнювання тексту по центру, як було вказано */
+    text-align: center;
 }
 
 .container {
@@ -106,6 +107,16 @@ ul {
     gap: 20px;
 }
 
+.gallery figure img {
+    /* Додаємо ефект наведення для зображень в галереї */
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery figure img:hover {
+    transform: scale(1.05); /* Збільшення зображення на 5% при наведенні */
+}
+
+
 /* Стилі для сторінки "Контакти" */
 .contacts ul {
     list-style-type: none;
@@ -115,3 +126,20 @@ ul {
 .contacts li {
     margin-bottom: 10px;
 }
+
+.contacts a {
+    /* Додаємо стилі для кнопок-посилань */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contacts a:hover {
+    /* Ефект при наведенні */
+    background-color: #0056b3;
+}
+
