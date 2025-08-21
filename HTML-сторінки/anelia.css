@@ -1,4 +1,4 @@
-/* Base style for the whole site */
+
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
   background-color: #f0f8ff;
@@ -16,7 +16,6 @@ header {
   text-align: center;
   font-weight: bold;
   font-size: 1.4rem;
-  position: sticky;
   top: 0;
   z-index: 1000;
 }
@@ -70,12 +69,10 @@ footer {
   text-align: center;
   border-top: 3px solid #000080;
   font-weight: bold;
-  position: sticky;
   bottom: 0;
   margin-top: 40px;
 }
 
-/* Headings style */
 h1 {
   font-size: 2.5rem;
   margin-bottom: 15px;
@@ -84,13 +81,13 @@ h1 {
   text-shadow: 1px 1px #add8e6;
 }
 
-/* Lists with some spacing */
+
 ul {
   padding-left: 1.2rem;
   margin-bottom: 20px;
 }
 
-/* Images */
+
 img {
   max-width: 100%;
   display: block;
@@ -100,7 +97,7 @@ img {
   box-shadow: 0 0 10px #87cefa;
 }
 
-/* Meme style text below images */
+
 .meme-caption {
   text-align: center;
   font-style: italic;
@@ -109,13 +106,13 @@ img {
   margin-bottom: 25px;
 }
 
-/* Style paragraphs for readability */
+
 p {
   font-size: 1.2rem;
   margin-bottom: 18px;
 }
 
-/* Цей клас потрібно додати до контейнера, який об'єднує фотографії */
+
 .photo-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -124,7 +121,7 @@ p {
   margin-top: 20px;
 }
 
-/* Стиль для фотографій у галереї */
+
 .photo-gallery img {
   width: 250px; /* Фіксована ширина для фото */
   height: 250px; /* Фіксована висота для фото */
