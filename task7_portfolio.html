@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sofiazah">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо моїх робіт</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff; 
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            background-color: #ffffff; 
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4682b4; 
+            margin-bottom: 30px;
+            font-size: 2.8em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        ol {
+            list-style-type: none; 
+            counter-reset: item;
+            padding: 0;
+            margin: 0 auto;
+            text-align: left;
+            max-width: 500px;
+        }
+
+        li {
+            counter-increment: item;
+            margin-bottom: 20px;
+            position: relative;
+            background-color: #e6f2ff; 
+            border-left: 5px solid #87ceeb; 
+            padding: 15px 20px 15px 40px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        li::before {
+            content: counter(item);
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #4682b4;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #2c3e50; 
+            font-size: 1.2em;
+            font-weight: 500;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #4682b4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Портфоліо моїх робіт</h1>
+        <ol>
+            <li><a href="task1_main.html"> Моя перша сторінка</a></li>
+            <li><a href="task2_about.html"> Сторінка "Про мене"</a></li>
+            <li><a href="task3_links.html"> Сторінка з улюбленими веб-ресурсами</a></li>
+            <li><a href="task4_gallery.html"> Сторінка фотогалерея</a></li>
+            <li><a href="task5_image_link.html"> Сторінка зображення-посилання </a></li>
+            <li><a href="task6_contacts.html"> Сторінка контактів з посиланнями </a></li>
+        </ol>
+    </div>
+</body>
+</html>
+

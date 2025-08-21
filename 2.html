@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтерактивна карта</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0057b7;
+            text-align: center;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+        }
+        img {
+            border: 2px solid #0057b7;
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color: #0057b7;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* Додамо підсвічування при наведенні */
+        area {
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Інтерактивна карта</h1>
+        <p style="text-align: center;">Натисніть на міста на карті, щоб дізнатися більше</p>
+        
+        <div class="image-container">
+            <!-- Змініть шлях до зображення на правильний -->
+            <img src="/home/usera07au17/Зображення/веб/dfjk.jpg" alt="Інтерактивна карта" usemap="#imagemap" id="map-image">
+            
+            <map name="imagemap">
+                <!-- Оновлені координати (приблизні) -->
+                <!-- Київ -->
+                <area shape="circle" coords="350,250,20" 
+                      href="https://uk.wikipedia.org/wiki/%D0%9A%D0%B8%D1%97%D0%B2" 
+                      alt="Київ" 
+                      title="Київ - столиця України"
+                      target="_blank">
+                
+                <!-- Львів -->
+                <area shape="circle" coords="150,200,20" 
+                      href="https://uk.wikipedia.org/wiki/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2" 
+                      alt="Львів" 
+                      title="Львів - культурна столиця України"
+                      target="_blank">
+                
+                <!-- Одеса -->
+                <area shape="circle" coords="300,350,20" 
+                      href="https://uk.wikipedia.org/wiki/%D0%9E%D0%B4%D0%B5%D1%81%D0%B0" 
+                      alt="Одеса" 
+                      title="Одеса - місто на Чорному морі"
+                      target="_blank">
+            </map>
+        </div>
+        
+        <div class="footer">
+            <p>Інтерактивна карта України</p>
+        </div>
+    </div>
+</body>
+</html>
